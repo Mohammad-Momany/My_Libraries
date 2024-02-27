@@ -1,6 +1,10 @@
 #include <iostream>
 
+#include "Validations.h"
+
 int main()
 {
-    std::cout << "Hello World!\n";
+    int number = Val::ReadLimitedNumber(1, 10);
+
+    std::cout << "The Number is " << number << endl;
 }
