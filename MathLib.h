@@ -17,6 +17,7 @@ int Facrorial(int N) {
     {
         Sum *= i;
     }
+
     return Sum;
 }
 
@@ -37,22 +38,12 @@ int MyRound(float Num) {
 
 int MyFloor(float Num) {
 
-    if (Num > 0)
-    {
-        return Num;
-    }
-
-    return Num - 1;
+    return (Num > 0) ? Num : Num - 1;
 }
 
 int MyCeil(float Num) {
 
-    if (Num > 0)
-    {
-        return Num + 1;
-    }
-
-    return Num;
+    return (Num > 0) ? Num + 1 : Num;
 }
 
 int MySqrt(float Num) {
