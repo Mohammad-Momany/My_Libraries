@@ -4,12 +4,13 @@
 using namespace std;
 
 namespace Val {
-    int ReadLimitedNumber(int From, int To) {
+
+    int ReadLimitedNumber(string message, int From, int To) {
 
         int EnteredNumber = 0;
 
-        while (EnteredNumber > To || EnteredNumber < From || cin.fail()) {
-            cout << "\n Plase enter the number :\n";
+        do {
+            cout << message;
             cin >> EnteredNumber;
 
             if (cin.fail())
@@ -23,7 +24,7 @@ namespace Val {
             else if (EnteredNumber < From)
                 cout << "\nThe number Must be greater than " << From << "\n";
 
-        }
+        } while (EnteredNumber > To || EnteredNumber < From || cin.fail());
 
         return EnteredNumber;
 
