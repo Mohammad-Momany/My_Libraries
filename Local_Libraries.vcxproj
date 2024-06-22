@@ -130,6 +130,7 @@
     <ClCompile Include="Local_Libraries.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="clsString.h" />
     <ClInclude Include="MathLib.h" />
     <ClInclude Include="Validations.h" />
   </ItemGroup>

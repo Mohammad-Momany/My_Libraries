@@ -1,10 +1,21 @@
 #include <iostream>
+#include <vector>
+#include "clsString.h"
 
-#include "Validations.h"
+using namespace std;
 
 int main()
 {
-    int number = Val::ReadLimitedNumber(1, 10);
+	clsString String;
+	String.Value = "Mohammad almomany";
 
-    std::cout << "The Number is " << number << endl;
+	vector<string> vWords = String.Split(" ");
+
+	for (int i = 0; i < vWords.size(); i++)
+	{
+		cout << vWords[i] << '\n';
+	}
+
+	system("pause>0");
+	return 0;
 }
