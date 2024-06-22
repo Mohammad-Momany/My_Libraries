@@ -1,11 +1,15 @@
 #include <iostream>
-#include <vector>
-#include "clsDate.h"
-
-using namespace std;
+#include "clsPeriod.h"
 
 int main()
+
 {
-	system("pause>0");
-	return 0;
+
+    clsPeriod Period1(clsDate(1, 1, 2022), clsDate(10, 1, 2022));
+    Period1.Print();
+
+    cout << "\n";
+
+
+    return 0;
 }
