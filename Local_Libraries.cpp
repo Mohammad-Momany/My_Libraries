@@ -1,21 +1,13 @@
 #include <iostream>
 #include <vector>
-#include "clsString.h"
+#include "clsDate.h"
 
 using namespace std;
 
 int main()
 {
-	clsString String;
-	String.Value = "Mohammad almomany";
-
-	vector<string> vWords = String.Split(" ");
-
-	for (int i = 0; i < vWords.size(); i++)
-	{
-		cout << vWords[i] << '\n';
-	}
-
+	clsDate Date("2020/04/12");
+	Date.Month
 	system("pause>0");
 	return 0;
 }
